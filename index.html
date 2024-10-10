@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black !important;
+            padding-left: 30%;
+            margin-left: 15% !important;
+            box-shadow: rgb(44, 203, 95);
+
+        }
+
+        input[type=text]:hover {
+            opacity: 5px
+
+            
+        }
+
+        .d {
+
+            padding-left: 2rem;
+            padding-bottom: 0rem;
+            padding-right: 2rem;
+            border: 1px solid skyblue;
+            border-radius: 20px;
+
+            margin: 2rem;
+            margin-left: 2rem;
+            margin-right: 4rem;
+            font-size: 20px;
+            color: rgb(66, 154, 125);
+
+        }
+
+        h1 {
+
+            color: aqua;
+        }
+
+        .dd {
+            padding: 1px;
+            color: rgb(128, 128, 128);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        span {
+            padding: 1px;
+            color: rgb(66, 154, 125);
+            font-size: 15px;
+        }
+
+        select {
+            padding-left: 5px;
+            padding-top: 5px;
+            position: relative;
+            margin: 1rem;
+            height: 28px;
+            border-radius: 5px;
+            background-color: bisque;
+            cursor: pointer;
+        }
+
+        input,
+        textarea {
+            padding-left: 20px;
+            padding-top: 5px;
+            padding-right: 0%;
+            position: relative;
+            margin: 1rem;
+            height: 28px;
+            border-radius: 5px;
+            color: black;
+            cursor: pointer;
+            flex-direction: column;
+            -ms-flex-align: center;
+            justify-content: center;
+        }
+         label{
+            padding-left: 20px;
+            padding-top: 5px;
+            padding-right: 0%;
+            position: relative;
+            margin: 1rem;
+            height: 28px;
+            border-radius: 5px;
+            
+        }
+         
+        table {
+            margin-top: 1px;
+            color: rgb(66, 154, 125);
+            font-size: 20px;
+        }
+
+        .ddd {
+            color: brown;
+            font-size: 20px;
+        }
+
+        p {
+            color: brown;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="d">
+        <form>
+            <h1>
+                <center>Registration Form</center>
+            </h1>
+            <div class="dd">Of course,all submitted information is kept in the strictest confidence</div>
+            <div class="dd">you always retain control of your information with D.W.Simpson & Co</div><br>
+            <div class="ddd"><strong>Our services are always at no cost to you</strong></strong></div><br>
+            <label for="n"><strong>Name:</strong></label>
+            <input name="n" type="text" required>
+            <table>
+                <tr>
+                    <td><label for="address"><strong>Address:</strong></label></td>
+                    <td><textarea name="address"></textarea></td>
+                </tr><br><br>
+            </table>
+        </form>
+        <form action="">
+            <label for="city">City</label>
+            <input name="city" type="text" name="city" required>
+            <label for="state"><strong>State/provision:</strong></label>
+            <input name="state" type="text" required>
+            <br><br>
+            <label for="code"><strong>Zip Code:</strong></label>
+            <input name="code" type="number" required>
+            <br><br>
+            <label for="country"><strong>Country:</strong></label>
+            <input name="country" type="text" required>
+            <br><br>
+            <label for="h"><strong>Phone:(H)</strong></label>
+            <input name="h" type="number" required>
+            <label for="fax"><strong>Fax:</strong></label>
+            <input name="fax" type="text" required>
+            <br><br>
+            <label for="w"><strong>Phone:(w)</strong></label>
+            <input name="w" type="number" required>
+            <span>(if able to speak freely)</span>
+            <br><br>
+            <label for="email1"><strong>Email:</strong></label>
+            <input name="email1" type="email" required><br><br>
+            <label for="company"><strong>Company Name:</strong></label>
+            <input name="company" type="text" required>
+            <span>(optional)</span><br><br>
+            <label for="desired"><strong>Desired Region</strong></label>
+            <select name="desired">
+                <option>others</option>
+                <option>desired</option>
+            </select>
+            <label for="state"><strong>State/provision:</strong></label>
+            <input name="state" type="text" required>
+            <br>
+            <p><strong>Professional designations earned:</strong></p>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="designation" value="College Student"> College Student</td>
+                    <td><input type="checkbox" name="designation" value="Actuarial Student"> Actuarial Student</td>
+                    <td><input type="checkbox" name="designation" value="ACAS"> ACAS</td>
+                    <td><input type="checkbox" name="designation" value="FCAS"> FCAS</td>
+                    <td><input type="checkbox" name="designation" value="ASA"> ASA</td>
+                </tr>
+                <tr>
+
+                    <td><input type="checkbox" name="designation" value="FSA"> FSA</td>
+                    <td><input type="checkbox" name="designation" value="EA"> EA</td>
+                    <td><input type="checkbox" name="designation" value="CFA"> CFA</td>
+                    <td><input type="checkbox" name="designation" value="MBA"> MBA</td>
+                    <td><input type="checkbox" name="designation" value="MAAA"> MAAA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="designation" value="FIA"> FIA</td>
+                    <td><input type="checkbox" name="designation" value="FCIA"> FCIA</td>
+                    <td><input type="checkbox" name="designation" value="FIAA"> FIAA</td>
+                    <td><input type="checkbox" name="designation" value="Financial Engineer"> Financial Engineer</td>
+                    <td><input type="checkbox" name="designation" value="MS"> M.S.</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="designation" value="PhD"> Ph.D.</td>
+                    <td><input type="checkbox" name="designation" value="Data Mining"> Data Mining</td>
+                    <td><input type="checkbox" name="designation" value="Quant"> Quant</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label for="other_designation">Other Designations:</label>
+                        <input type="text" id="other_designation" name="other_designation">
+                    </td>
+                </tr>
+            </table>
+            <center><button type="submit"
+                    style="color: rgb(231, 235, 241);background-color: rgb(56, 17, 230);height: 2rem;border-radius: 5px;">Submit</button>
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>
