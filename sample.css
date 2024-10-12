@@ -1,8 +1,9 @@
-.items:hover{
+.items:hover  a{
     padding:25px;
     background-color: #0071bd;
     width: auto;
     border-radius: 5px ;
+    color:white ;
     height: 50px !important;
     
 }
