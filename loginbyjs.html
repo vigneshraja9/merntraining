@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: absolute;
+            border: 1px solid;
+            width: 500px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 20px;
+            padding: 6px;
+            height: 400px;
+            border-radius: 7px;
+            background-color: #0071bd;
+        }
+        
+        h1 {
+            color: whitesmoke;
+        }
+        
+        .container2 {
+            height: 250px;
+            width: 400 px;
+            margin-top: 4px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border: 1px solid;
+            padding-top: 2px;
+            padding-bottom: 40px;
+            padding-right: 40px;
+            padding-left: 40px;
+            font-family: sans-serif;
+            border-radius: 7px;
+            background-color: whitesmoke;
+        }
+        
+        input {
+            width: 100%;
+            height: 18px;
+            cursor: pointer;
+        }
+        
+        .button {
+            width: 100%;
+            background-color: #0071bd;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            height: 18px;
+        }
+        
+        .button:hover {
+            background-color: rgb(73, 135, 243);
+        }
+        
+        #number {
+            width: 73%;
+            margin-left: 40px;
+        }
+        
+        select {
+            width: 15%;
+            height: 21px;
+            cursor: pointer;
+            padding: 2px 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+</body>
+<script>
+    //body creation
+    const body = document.getElementsByTagName("body")[0];
+    //creating div element
+    const div1 = document.createElement("div");
+    div1.className = "container";
+    body.appendChild(div1);
+    //creating h1 tag
+    const h1 = document.createElement("h1");
+    h1.innerHTML = "Your Path For a Successfull Craeer!";
+    div1.appendChild(h1);
+    //creating second div element
+    const div2 = document.createElement("div");
+    div2.className = "container2"
+        //creating h3 tag
+    const h3 = document.createElement("h3");
+    h3.innerHTML = "New Batch Starts From January 2024";
+    div2.appendChild(h3);
+    //br tag 
+
+    const line2 = document.createElement("br");
+    div2.appendChild(line2);
+    //creating para tag 
+    const p1 = document.createElement("p1");
+    p1.innerHTML = "Submit Your Detail,Our Team Will Get Back To You";
+    div2.appendChild(p1)
+        //br tag
+    const line3 = document.createElement("br");
+    div2.appendChild(line3);
+    const line4 = document.createElement("br");
+    div2.appendChild(line4);
+    const nm = document.createElement("input");
+
+    nm.setAttribute("type", "text");
+    nm.setAttribute("placeholder", "Enter full name");
+    div2.appendChild(nm);
+    const line5 = document.createElement("br");
+    div2.appendChild(line5);
+    const line6 = document.createElement("br");
+    div2.appendChild(line6);
+    const email = document.createElement("input");
+    email.setAttribute("type", "email");
+    email.setAttribute("placeholder", "Enter email id");
+    div2.appendChild(email);
+    const line7 = document.createElement("br");
+    div2.appendChild(line7);
+    const line8 = document.createElement("br");
+    div2.appendChild(line8);
+    const select = document.createElement("select");
+    select.id = "select";
+    div2.appendChild(select);
+    const optgroup = document.createElement("optgroup");
+    select.appendChild(optgroup);
+    const opt1 = document.createElement("option");
+    opt1.innerHTML = "+91";
+    optgroup.appendChild(opt1);
+    const opt2 = document.createElement("option");
+    opt2.innerHTML = "+1";
+    optgroup.appendChild(opt2);
+    const opt3 = document.createElement("option");
+    opt3.innerHTML = "+61";
+    optgroup.appendChild(opt3);
+    const number = document.createElement("input");
+    number.setAttribute("type", "number");
+    number.id = "number";
+    number.setAttribute("placeholder", "Mobile No*");
+    div2.appendChild(number);
+    const line9 = document.createElement("br");
+    div2.appendChild(line9);
+    const line10 = document.createElement("br");
+    div2.appendChild(line10);
+    const button = document.createElement("button");
+    button.className = "button"
+    button.innerHTML = "Sumbit";
+    button.setAttribute("type", "submit");
+    div2.appendChild(button);
+    div1.appendChild(div2);;
+</script>
+
+</html>
